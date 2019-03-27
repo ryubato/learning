@@ -1,1 +1,3 @@
 # Learning
+
+## why, what, how
