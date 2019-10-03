@@ -99,19 +99,19 @@ Spring Boot의 플러그인을 해당 프로젝트에 적용하지 않고도 프
 ```groovy
 plugins {
     java
-    id("org.springframework.boot") version "2.1.9.RELEASE" apply false
-    id("io.spring.dependency-management") version "1.0.8.RELEASE"
+    id "org.springframework.boot" version "2.1.9.RELEASE" apply false
+    id "io.spring.dependency-management" version "1.0.8.RELEASE"
 }
 
 dependencyManagement {
     imports {
-        mavenBom(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES)
+        mavenBom org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES
     }
 }
 ```
 
 ```groovy
-apply plugin: 'io.spring.dependency-management'
+apply plugin: "io.spring.dependency-management"
 
 dependencyManagement {
     imports {
@@ -125,3 +125,36 @@ dependencyManagement {
 https://docs.spring.io/spring-boot/docs/current/gradle-plugin/reference/html/
 
 https://plugins.gradle.org/plugin/io.spring.dependency-management
+
+### Multi Project Plugin 적용
+
+Using the plugins DSL:
+
+```grooy
+plugins {
+    id "org.springframework.boot" version "2.1.9.RELEASE" apply false
+}
+
+subprojects {
+    apply plugin: "org.springframework.boot"
+}
+```
+
+Using legacy plugin application:
+
+```grooy
+buildscript {
+  repositories {
+    maven {
+      url "https://plugins.gradle.org/m2/"
+    }
+  }
+  dependencies {
+    classpath "org.springframework.boot:spring-boot-gradle-plugin:2.1.9.RELEASE"
+  }
+}
+
+subprojects {
+    apply plugin: "org.springframework.boot"
+}
+```
