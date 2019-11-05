@@ -1,4 +1,4 @@
-# 개발환경구성
+# Windows 10 개발환경구성
 
 ## WSL Ubuntu
 
