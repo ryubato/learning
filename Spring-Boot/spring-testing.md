@@ -12,7 +12,7 @@ mock objects 를 사용하여 독립된 환경에서 테스트를 할 수 있다
 ### Mock Objects
 
 - Environment: `org.springframework.mock.env`
-- JNDI: `org.springframework.mock.jndi'
+- JNDI: `org.springframework.mock.jndi`
 - Servlet API: `org.springframework.mock.web`
 - Spring Web Reactive: `org.springframework.mock.http.server.reactive`
 
