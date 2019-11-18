@@ -1,4 +1,4 @@
-## maven project "group id", "artifact id" 네이밍 가이드
+## project "group id", "artifact id" 네이밍 가이드
 
 ### group Id
 
