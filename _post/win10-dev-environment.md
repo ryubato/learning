@@ -25,11 +25,13 @@ rm -rf /temp
 #### 0. 터미널 속성에서 폰트를 D2 ligature로 변경
 
 #### 1. zsh 설치
+
 ```bash
 sudo apt-get install zsh
 ```
 
 #### 2. zsh 설정 변경 - 테마 agnoster로 변경
+
 ```bash
 sudo vi ~/.zshrc
 
@@ -37,6 +39,7 @@ ZSH_THEME = "agnoster"
 ```
 
 #### 3. zsh 설정 변경 - bash 터미널 색상 테마 적용
+
 ```bash
 sudo vi ~/.zshrc
 
@@ -44,6 +47,7 @@ eval `dircolors ~/.dircolors`  # 추가
 ```
 
 #### 4. zsh 설정 변경 - prompt context 수정
+
 ```bash
 sudo vi ~/.zshrc
 
@@ -56,6 +60,7 @@ prompt_context() {
 ```
 
 #### 5. zsh 설정 변경 - New Line 적용
+
 ```bash
 vi ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
@@ -88,11 +93,13 @@ prompt_newline() {
 ```
 
 #### 6. oh my zsh 설치
+
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 #### 7. wsl ubuntu 기본 shell을 bash에서 zsh로 변경
+
 ```bash
 which zsh # zsh 경로 확인 ex) /usr/bin/zsh
 chsh -s /usr/bin/zsh
@@ -106,7 +113,7 @@ Settings > Tools > Terminal > Shell path : C:\Windows\System32\wsl.exe
 C:\Windows\System32\wslconfig /list
 
 Windows Subsystem for Linux Distributions:
-Ubuntu-18.04 
+Ubuntu-18.04
 Legacy (Default)
 
 C:\Windows\System32\wslconfig /setdefault Ubuntu-18.04

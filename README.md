@@ -2,4 +2,4 @@
 
 </br>
 
-why, what, how
+blog 작성글 임시 저장소

@@ -5,7 +5,6 @@
 ```command
 git checkout -b $brand_name
 ```
-</br>
 
 ## commit 수정
 
@@ -14,7 +13,6 @@ git checkout -b $brand_name
 ```command
 git commit --amend
 ```
-</br>
 
 ## commit 되돌리기
 

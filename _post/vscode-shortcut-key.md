@@ -1,3 +1,14 @@
+---
+layout: post
+title: vs code 자주 쓰는 키
+catalog: true
+header-img: ''
+tags: 
+  - vscode
+date: 
+subtitle: 
+---
+
 * **명령문** : `Ctrl + Shift + p`, `F1`
 
 * **사이드바에 포커스** : `Ctrl + 0`
@@ -11,4 +22,3 @@
 * **사용자 설정** : `Ctrl + ,`
 
 * **미리보기** : `Ctrl + K V`
-

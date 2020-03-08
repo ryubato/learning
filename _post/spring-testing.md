@@ -23,4 +23,3 @@ mock objects 를 사용하여 독립된 환경에서 테스트를 할 수 있다
 - 서버에 배포하거나 다른 인프라와 연결할 필요없이 테스트를 할 수 있는게 중요하다.
 
 ### Goals of Integration Testing
-

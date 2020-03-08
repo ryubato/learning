@@ -33,4 +33,3 @@ Spring Boot application is a Spring `ApplicationContext`
 External properties, logging, and other features of Spring Boot are installed in the context by default only if you use `SpringApplication` to create it.
 
 Spring Boot는 `spring-test`, `@ContextConfiguration`을 대체하는 `@SpringBootTest`를 제공
-

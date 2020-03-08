@@ -18,11 +18,7 @@ https://plugins.gradle.org/plugin/io.spring.dependency-management
 - 바이너리코드 패키징
 - 배포
 
-## maven 보다 gradle이 좋은 이유
-
-멀티 프로젝트(모듈), wrapper 지원
-
-### wrapper
+## wrapper
 
 빌드도구를 실행할 수 있는 래퍼 바이너리 파일(gradle-wrapper.jar)과 이를 실행할 수 있는 스크립트를 함께 등록하여 관리하는 방식, 빌드할때 배포본에는 포함되지 않는다.
 
