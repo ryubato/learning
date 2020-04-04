@@ -50,14 +50,14 @@ git stash pop
 
 ### fetch
 
-remote 와 현재 작업 중인 local 소스와 비교 하고 싶을때
+remote 와 현재 작업 중인 local 소스와 비교 하고 싶을때...
+
+pull은 HEAD 위치가 remote와 local이 같고, fetch는 다르다.
 
 ```shell
 git fetch
 git diff HEAD origin/master
 ```
-
-pull은 HEAD 위치가 remote와 local이 같고, fetch는 다르다.
 
 ### tag
 
