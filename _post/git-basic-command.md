@@ -31,3 +31,48 @@ git revert $commit1 $commit2
 ```command
 git reset $commit
 ```
+
+### stash
+
+A, B Branch 가 있는 상태에서
+
+B Branch에서 작업하는 중에 B Branch에서 작업한 내용을 저장하고
+
+A Branch checkout 이 필요한 경우
+
+```shell
+git stash list
+git stash save
+git stash apply
+git stash drop
+git stash pop
+```
+
+### fetch
+
+remote 와 현재 작업 중인 local 소스와 비교 하고 싶을때
+
+```shell
+git fetch
+git diff HEAD origin/master
+```
+
+pull은 HEAD 위치가 remote와 local이 같고, fetch는 다르다.
+
+### tag
+
+```shell
+git tag {tag name} [branch name]or[commit no]
+
+# annotated tag
+git tag -a {tag name} [branch name]or[commit no] -m {message}
+
+# annotated tag 정보 상세 보기
+git tag -v {tag name}
+
+# tag push to remote
+git push --tags
+
+# delete tag
+git tag -d {tag name}
+```
